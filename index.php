@@ -9,7 +9,7 @@ session_start();
  </head>
   <body>
   <?php
-if ($_SESSION['FBID']): ?>      <!--  After user login  -->
+if (isset($_SESSION['FBID'])): ?>      <!--  After user login  -->
 <div class="container">
 <div class="hero-unit">
   <h1>Hello <?php
