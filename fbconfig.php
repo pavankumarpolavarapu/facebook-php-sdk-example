@@ -60,7 +60,7 @@ if (isset($session)) {
     header("Location: index.php");
 } 
 else {
-    $loginUrl = $helper->getLoginUrl();
+    $loginUrl = $helper->getLoginUrl(array('email'));
     header("Location: " . $loginUrl);
 }
 ?>
